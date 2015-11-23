@@ -1,0 +1,27 @@
+{
+	"name": "superfast-temple",
+	"version": "0.0.0",
+	"description": "Superfast transform for Temple templates.",
+	"author": "Tyler Johnson <tyler@vintyge.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tyler-johnson/superfast-temple.git"
+	},
+	"main": "index.js",
+	"superfast": true,
+	"scripts": {
+		"lint": "jshint lib/",
+		"build": "make",
+		"prepublish": "npm run lint && npm run build"
+	},
+	"dependencies": {
+		"templejs": "~0.6.5"
+	},
+	"devDependencies": {
+		"jshint": "2.x",
+		"rollup": "~0.21.0",
+		"rollup-plugin-babel": "~1.0.0"
+	},
+	"keywords": [],
+	"license": "MIT"
+}
